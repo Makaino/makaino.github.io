@@ -36,6 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    width: 100%;
 
 }
 
@@ -52,6 +53,11 @@ header {
     list-style: none;
     align-items: center;
     position: relative;
+
+}
+
+.menu li {
+    /*margin-right: 80px;*/
 }
 
 .menu a {
@@ -113,104 +119,47 @@ header {
 
 .menu .langselect:hover li:last-child {
     visibility: visible;
-    transition-duration: 5000ms;
+    transition-duration: 100s;
 }
 
-.presentation {
-    padding: 0 217px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 275px;
-
+.main {
+    display: block;
+    padding: 60px 220px;
+    height: 100vh;
+    margin: auto;
 }
 
-.presentation .text {
-    width: 850px;
-    margin-bottom: 36px;
-}
-
-.presentation h1 {
+.main h1 {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
     font-size: 66px;
     line-height: 86px;
     color: #333333;
-    margin-bottom: 36px;
-    flex: 1;
+    margin-bottom: 60px;
 
 }
 
-.presentation p {
-    width: 800px;
-    font-family: gilroy;
+.main p {
+    font-family: Gilroy;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 46px;
     color: #333333;
     opacity: 0.8;
-    flex: 1;
 
 }
 
-.presentation figure {
-    display: block;
-    flex: 1
-}
-
-.arrow {
-    display: none;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    margin-top: 750PX;
-    margin-left: -135px;
-    align-items: center;
-    width: 200px;
-}
-
-.arrow a {
-    display: flex;
-    text-align: center;
-    width: 68px;
-    height: 68px;
-    border: 2px solid #333333;
-    border-radius: 50%;
-    opacity: 0.5;
-    padding: 27px 0;
-    text-decoration: none;
-    font-family: gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 100%;
-    color: #333333;
-    opacity: 0.5;
-    margin-left: 5px;
-}
-
-.arrow img {
-    margin-left: 25px;
-}
-
-.arrow span {
-    margin-left: 35px;
-
-
-}
-
-.how_it_works {
+.product {
     background-color: rgba(249, 201, 198, 0.2);
     box-shadow: 0px 26px 60px rgba(70, 70, 70, 0.08);
     border-radius: 18px;
-    padding: 66px 0;
-    margin: 0 60px 160px;
+    margin: 60px;
+
 }
 
-.how_it_works h2 {
+.product h2 {
     display: block;
     width: 100%;
     text-align: center;
@@ -221,9 +170,11 @@ header {
     line-height: 66px;
     text-align: center;
     color: #333333;
+    margin: 36px 0 26px 0;
+
 }
 
-.how_it_works p {
+.product p {
     width: 960px;
     margin: 0 auto;
     font-family: gilroy;
@@ -234,238 +185,185 @@ header {
     text-align: center;
     color: #333333;
     opacity: 0.8;
+
+
 }
 
-.how_it_works video {
+.product .demo {
     display: block;
-    width: 1234px;
-    height: 680px;
-    background-image: url(images/video.png);
-    margin: 48px auto;
+    width: 80%;
+    margin: 60px auto;
+    background-color: #333333;
+    border-radius: 18px;
+
 }
 
-.advantages {
+.demo video {
+    display: block;
+    width: 720px;
+    height: 1280px;
+    margin: 10px auto;
+    align-content: center;
+}
+
+.technology {
     display: flex;
+    padding: 60px 220px;
     flex-wrap: wrap;
-    padding: 0 217px;
-    margin-bottom: 155px;
+    margin: 0 auto;
 }
 
-.advantages .queues,
-.care,
-.dontbother,
-.comfort {
+.technology .examples {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 80px;
-
+    width: 100%;
 
 }
 
-.left {
-    margin-right: 120px;
-}
-
-.right {
-    margin-left: 120px;
-}
-
-.advantages h2 {
+.technology h2 {
     display: block;
     width: 100%;
-    margin: 0 auto 45px;
     text-align: center;
-    color: #333333;
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
     line-height: 66px;
-
-
-}
-
-
-.advantages h3 {
-    display: block;
-    width: 100%;
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 36px;
+    text-align: center;
     color: #333333;
-    margin-bottom: 26px;
+    margin: 36px 0 26px 0;
+
 }
 
-.advantages p {
-    display: block;
+
+.technology p {
+    width: 960px;
+    margin: 0 auto;
     font-family: gilroy;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
     color: #333333;
     opacity: 0.8;
+    margin-bottom: 40px;
 
 }
 
-
-.advantages figure {
-    display: block;
-    flex: 1;
-}
-
-.team {
+.examples .ikea,
+.lamoda {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.examples video {
+    align-self: center;
+    width: 300px;
+
+}
+
+.conditions {
     background-color: rgba(249, 201, 198, 0.2);
     box-shadow: 0px 26px 60px rgba(70, 70, 70, 0.08);
     border-radius: 18px;
-    padding: 60px 0;
-    margin: 0 60px 160px;
-    text-align: center;
+    margin: 60px;
+
+
 }
 
-.team h2 {
+.conditions h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 66px;
+    text-align: center;
+    color: #333333;
+    margin: 36px 0 26px 0;
+
+}
+
+
+.conditions p {
+    width: 960px;
+    margin: 0 auto;
+    font-family: gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    color: #333333;
+    opacity: 0.8;
+    margin-bottom: 40px;
+
+}
+
+.summary {
+    display: flex;
+    padding: 60px 220px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.summary h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 66px;
+    text-align: center;
+    color: #333333;
+    margin: 36px 0 26px 0;
+
+}
+
+.summary span {
     display: block;
     width: 100%;
     margin: 0 auto;
-    font-family: Playfair Display;
+    font-family: gilroy;
+    font-style: normal;
+    font-weight: 500;
     font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 66px;
-    color: #333333;
-
-
-
-}
-
-.team p {
-    margin-bottom: 46px;
-    font-family: gilroy;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 46px;
-    letter-spacing: 0em;
-    color: #333333;
-    opacity: 0.8;
-
-}
-
-.team div {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.team figure {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.team img {
-    width: 136px;
-    height: 136px;
-    margin-bottom: 27px;
-
-}
-
-.team figure span {
-    display: block;
-    margin-bottom: 16px;
-    font-family: Playfair Display;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-    color: #333333;
-}
-
-.team figure p {
-    font-family: gilroy;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #333333;
-
-}
-
-.become_investor {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    margin-bottom: 126px;
-}
-
-.become_investor h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 66px;
-    letter-spacing: 0em;
     color: #333333;
-
-
+    margin-bottom: 40px;
 }
 
-.become_investor p {
+.summary p {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
     font-family: gilroy;
-    font-size: 20px;
     font-style: normal;
     font-weight: 500;
+    font-size: 20px;
     line-height: 46px;
-    letter-spacing: 0em;
-    margin-bottom: 36px;
+    text-align: center;
     color: #333333;
     opacity: 0.8;
+    margin-bottom: 40px;
 
-}
-
-.become_investor a {
-    font-family: gilroy;
-    text-decoration: none;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 78px;
-    width: 276px;
-    height: 78px;
-    background-color: #FBD77B;
-    color: #333333;
-
-}
-
-.become_investor a:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.become_investor a:active {
-    color: #333333;
 }
 
 .contact_us {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin: 0 auto;
     background-color: rgba(249, 201, 198, 0.2);
     box-shadow: 0px 26px 60px rgba(70, 70, 70, 0.08);
     border-radius: 18px;
-    padding: 60px 0;
-    margin: 0 60px 160px;
+    width: 100%;
     text-align: center;
-    margin-bottom: 160px;
-
+    padding: 28px 60px;
 }
 
 .contact_us h2 {
@@ -530,8 +428,28 @@ header {
     color: #A8A8A8;
 }
 
+.contact_us form textarea {
+    display: block;
+    width: 816px;
+    height: 100px;
+    padding: 0px 4px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 2px solid rgba(51, 51, 51, 0.16);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A8A8A8;
+
+
+
+}
+
 .contact_us .submit input {
     width: 816px;
+    margin-top: 26px;
     background-color: #FBD77B;
     font-family: Gilroy;
     font-style: normal;
@@ -547,6 +465,7 @@ header {
 
 }
 
+/*-------*/
 
 footer {
     height: fit-content;
@@ -618,131 +537,4 @@ footer .content ul a {
 
 footer .content ul a:active {
     color: #333333;
-}
-
-@media (max-width: 575.98px) {
-
-    .container {
-        width: fit-content;
-        height: fit-content;
-        margin: 0 auto;
-        padding: 10px 40px;
-    }
-
-    header {
-        margin: 0 auto;
-        padding: 10px 40px;
-    }
-
-    header .menu {
-        display: none;
-    }
-
-    .presentation {
-        flex-direction: column-reverse;
-        padding: 0;
-        margin: 30px auto;
-    }
-
-
-    .how_it_works {
-    	width: 100%;
-        margin: 30px auto;
-        padding: 10px 40px;
-    }
-
-    .how_it_works p {
-    	width: 100%;
-    }
-
-    .how_it_works iframe {
-       width: 100%;
-        height: auto;
-        margin: 20px auto;
-        padding: 10px;
-        align-self: center;
-    }
-
-    .advantages {
-        width: 100%;
-        flex-wrap: wrap;
-        padding: 10px 40px;
-        margin-bottom: 30px;
-    }
-
-    .advantages h2 {
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .advantages .queues,
-    .care {
-        flex-direction: column;
-        padding: 20px;
-        margin: 0 auto;
-    }
-
-    .advantages .dontbother,
-    .comfort {
-        flex-direction: column-reverse;
-        padding: 20px;
-        margin: 0 auto;
-    }
-
-    .advantages div {
-        margin: 10px auto;
-    }
-
-    .team {
-        width: 100%;
-        margin: 30px auto;
-        flex-direction: column;
-    }
-
-    .team div {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .team figure {
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-    }
-
-    .become_investor {
-    	width: 100%;
-    	margin: 30px auto;
-    }
-
-    .contact_us {
-       width: 100%;
-        padding: 10px 10px;
-        margin: 30px auto;
-    }
-
-    .contact_us .social {
-        flex-direction: column;
-    }
-
-    .contact_us a,
-    p,
-    h2 {
-        display: block;
-        margin-bottom: 10px;
-        justify-content: space-between;
-    }
-
-    footer {
-        width: 100%;
-        height: fit-content;
-        flex-direction: column;
-    }
-
-    footer .logo {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-}
 }
